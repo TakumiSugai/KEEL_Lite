@@ -38,5 +38,30 @@ demoを参照
 
 ## Install
 
-(項目作成中)
+### for PC
 
+```
+git clone https://github.com/TakumiSugai/KEEL_Lite.git
+
+cd KEEL_Lite
+
+python setup.py install
+```
+
+### for Android device
+
+```
+# Python実行環境として
+# Termux(https://play.google.com/store/apps/details?id=com.termux)を想定
+# インストールと初期設定は完了しているものとする
+
+pkg install git python clang fftw
+
+LDFLAGS=" -lm -lcompiler_rt" pip install numpy
+
+git clone https://github.com/TakumiSugai/KEEL_Lite.git
+
+cd KEEL_Lite
+
+python setup.py install
+```
